@@ -83,7 +83,7 @@ nav ul li a:hover {
 .south {
   text-align: center;
 }
-@media(max-width: 580px) {
+@media(max-width: 480px) {
   .logo {
     position: fixed;
     top: 0;
@@ -115,8 +115,8 @@ nav ul li a:hover {
   }
   .myname h1{
     text-align: left;
-    margin-left: 90px;
-    font-size: 60px;
+    margin-left: 60px;
+    font-size: 30px;
     letter-spacing: 10px;
   }
   .south a {
