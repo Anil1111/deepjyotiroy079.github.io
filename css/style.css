@@ -91,18 +91,20 @@ nav ul li a:hover{
     margin-bottom: 150px;
 }
 .about p{
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 60;
 }
 .profile img{
   border-radius: 50%;
   width: 200px;
+  margin-left: 50px;
 }
-@media(max-width: 780px) {
+@media(max-width: 768px) {
     .about {
         margin-top: 70px;
         margin-left: 15px;
         margin-right: 15px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .profile img{
         width: 160px;
@@ -117,11 +119,11 @@ nav ul li a:hover{
         top: 0;
         color: #000;
         margin-top: 16px;
+        font-size: 20px;
     }
     nav ul {
         max-height: 0px;
         background: #fff;
-
     }
     nav.black ul {
         background: #fff;
