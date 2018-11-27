@@ -22,6 +22,7 @@ i{
     padding-top: 120px;
     padding-bottom: 40px;
 }
+
 .footerText {
     font-family: "Quicksand";
     text-align: center;
@@ -34,8 +35,9 @@ i{
 
 @media(max-width: 768px) {
     .footerText {
-        font-size: 16px;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 18px;
+    }
+    .centerLinks {
+        margin-right: 30px;
     }
 }
