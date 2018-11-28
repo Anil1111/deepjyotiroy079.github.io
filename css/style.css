@@ -178,17 +178,13 @@ ul {
     transition: opacity 0.3s linear;
 }
 /*Expereince*/ 
-.exp {
-    margin: 120px;
-}
-.exp h1 {
-    font-weight: 900;
+.education {
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 /*exp end*/
 @media(max-width: 1200px) {
-    .parallax {
-        background-attachment: scroll;
-    }
+   
     .skill {
         margin-top: 60px;
     }
@@ -197,12 +193,6 @@ ul {
         margin-top: 80px;
         letter-spacing: 2px;
         margin-bottom: 20px;
-        font-size: 22px;
-    }
-    .exp {
-        margin: 10px;
-    }
-    .exp h1 {
         font-size: 22px;
     }
     .skill h3 {

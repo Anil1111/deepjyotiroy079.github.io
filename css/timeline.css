@@ -1,115 +1,93 @@
 
-.timeline .timeline-item::after, .timeline .timeline-item::before {
-    clear: both;
-    content: '';
-    display: block;
-    width: 100%;
-  }
-  
+#content {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid #004ffc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Quicksand', sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+.timeline h1 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 34px;
+  color: #313534;
+}
+.timeline h2,
+.timeline h3 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 28px;
+  color:  #313534;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+  color:  #313534;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255, 255, 255, 0.4);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  font-family: 'Saira', sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #004ffc;
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+@media(max-width: 1200px) {
   .timeline {
-    margin: 30px auto;
-    padding: 0 10px;
-    position: relative;
-    transition: all 0.25s ease-in;
-    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 100%;
   }
-  
-  .timeline::before {
-    background: #000;
-    content: '';
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    width: 3px;
+  .timeline h1,
+  .timeline h2,
+  .timeline h3 {
+    margin: 0;
   }
-  
-  .timeline::after {
-    clear: both;
-    content: '';
-    display: table;
-    width: 100%;
-  }
-  
-  .timeline .timeline-item {
-    margin-bottom: 80px;
-    position: relative;
-  }
-  
-  .timeline .timeline-item .timeline-icon { 
-    background: #fff;
-    border-radius: 50%;
-    left: 50%;
-    margin-left: -23px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 50px;
-  }
-  .fa-check-circle {
-        margin-left: 6px;
-        font-size: 36px;
-        color: red;
-  } 
-  .timeline .timeline-item .timeline-content {
-    padding: 20px;
-    text-align: right;
-    transition: all 0.25s ease-in;
-    width: 45%;
-    background: transparent;
-  }
-  
-  .timeline .timeline-item .timeline-content p {
-    color: #000;  
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  .timeline .timeline-item .timeline-content .timeline-content-date {
-    font-size: 28px;
-    font-weight: 800;
-  }
-  
-  .timeline .timeline-item .timeline-content.right {
-    float: right;
+  .timeline p{
     text-align: left;
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .timeline {
-      margin: 30px;
-      padding: 0;
-      width: 90%;
-    }
-    .timeline .timeline-item .timeline-content p {  
-      font-size: 16px;
-      font-weight: 200;
-    }
-    .timeline .timeline-item .timeline-content h3 {  
-      font-size: 16px;
-      font-weight: 600;
-    }
-    .timeline .timeline-item .timeline-content .timeline-content-date {
-      font-size: 22px;
-      font-weight: 600;
-    }
-    .timeline::before {
-      left: 0;
-    }
-    .timeline .timeline-item .timeline-content {
-      float: right;
-      text-align: left;
-      width: 90%;
-    }
-    .timeline .timeline-item .timeline-content::before, .timeline .timeline-item .timeline-content.right::before {
-      border-left: 0;
-      border-right: 7px solid #fff;
-      left: 10%;
-      margin-left: -6px;
-    }
-    .timeline .timeline-item .timeline-icon {
-      left: 0;
-    }
-  }
-  
-  
+}
