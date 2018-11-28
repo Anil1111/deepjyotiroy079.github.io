@@ -35,8 +35,8 @@
                     <div class="menu">
                         <ul>
                             <li><a href="#about" class="smoothScroll">Profile</a></li>
+                            <li><a href="#Skill" class="smoothScroll">Skills</a></li>
                             <li><a href="#">Experience</a></li>
-                            <li><a href="#">Skills</a></li>
                             <li><a href="#contact" class="smoothScroll">Contact Me</a></li>
                         </ul>
                     </div>
@@ -63,66 +63,116 @@
             </div>
         </div>
         <!--skills-->
-        <div class="skill container-fluid" id="skill">
+        <div class="skill container-fluid" id="Skill">
             <h1>What I know</h1>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 container-fluid text-center">
-                    <h3>Programming languages</h3>
-                    <ul class="skillLinks">
-                        <li style="display:inline-block">
-                            <img src="./images/icons/c-plus.png" alt="">
+            <div class="row skillrow">
+                <div class="col-md-6 text-left programming">
+                    <h3>Programming Languages</h3>
+                    <ul id="skills">
+                        <li>
+                            <p>C</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#33cccc" }'>
+                                    <span class="pct">60%</span>
+                                </span>
+                            </div>
+                        </li>	
+                        <li>
                             <p>C++</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#00ffff" }'>
+                                    <span class="pct">70%</span>
+                                </span>
+                            </div>
                         </li>
-                        <li style="display:inline-block">
-                                <img src="./images/icons/java.png" alt="">
-                                <p>Java</p>
+                        <li>
+                            <p>Java</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#ffff00", "delay": 600 }'>
+                                    <span class="pct">70%</span>
+                                </span>
+                            </div>
                         </li>
-                        <li style="display:inline-block">
-                                <img src="./images/icons/python.png" alt="">
-                                <p>Python</p>
+                        <li>
+                            <p>Python</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                                    <span class="pct">70%</span>
+                                </span>
+                            </div>
                         </li>
-                    </ul>    
+                    </ul>
                 </div>
-                <div class="col-md-12 col-lg-12 container-fluid text-center">
+                <div class="col-md-6 text-left web">
                     <h3>Web Development</h3>
-                    <ul class="skillLinks">
-                        <li style="display:inline-block">
-                            <img src="./images/icons/html.png" alt="">
+                    <ul id="skills">	
+                        <li>
                             <p>HTML 5</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#ff3300" }'>
+                                    <span class="pct">80%</span>
+                                </span>
+                            </div>
                         </li>
-                        <li style="display:inline-block">
-                                <img src="./images/icons/css.png" alt="">
-                                <p>CSS 3</p>    
+                        <li>
+                            <p>CSS3</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#3366ff", "delay": 600 }'>
+                                    <span class="pct">70%</span>
+                                </span>
+                            </div>
                         </li>
-                        <li style="display:inline-block">
-                                <img src="./images/icons/js.png" alt="">
-                                <p>Javascript</p>
+                        <li>
+                            <p>JavaScript</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                                    <span class="pct">60%</span>
+                                </span>
+                            </div>
                         </li>
-                        <li style="display:inline-block">
-                                <img src="./images/icons/php.png" alt="">
-                                <p>PHP</p>
+                        <li>
+                            <p>PHP</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                                    <span class="pct">60%</span>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-12 col-lg-12 container-fluid text-center">
+            </div>
+            <div class="row skillrow">
+                <div class="col-md-6 text-left dbms">
+                    <h3>Database Management System</h3>
+                    <ul id="skills">
+                        <li>
+                            <p>MySQL (RDBMS)</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#ff3399" }'>
+                                    <span class="pct">70%</span>
+                                </span>
+                            </div>
+                        </li>	
+                        <li>
+                            <p>MongoDB (NoSQL)</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#00ff00" }'>
+                                    <span class="pct">80%</span>
+                                </span>
+                            </div>
+                        </li>   
+                    </ul>
+                </div>
+                <div class="col-md-6 text-left version">
                     <h3>Version Control</h3>
-                    <ul class="skillLinks">
-                        <li style="display:inline-block">
-                            <img src="./images/icons/git.png" alt="">
+                    <ul id="skills">	
+                        <li>
                             <p>Git/Github</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-12 col-lg-12 container-fluid text-center">
-                    <h3>Database Management Systems</h3>
-                    <ul class="skillLinks">
-                        <li style="display:inline-block">
-                            <img src="./images/icons/mysql.png" alt="">
-                            <p>MySql <br />(RDBMS)</p>
-                        </li>
-                        <li style="display:inline-block">
-                            <img src="./images/icons/mongo.png" alt="">
-                            <p>MongoDB <br />(NoSQL)</p>
+                            <div class="bar-container">
+                                <span class="bar" data-bar='{ "color": "#d9d9d9" }'>
+                                    <span class="pct">60%</span>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -165,7 +215,7 @@
         <script type="text/javascript" src="./js/smoothscroll.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
+        <script src="./js/simple-skillbar.js"></script>
         <script type="text/javascript" src="./js/js.js"></script>
         
     </body>
