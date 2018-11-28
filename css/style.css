@@ -9,7 +9,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background: url('../images/background.jpg') no-repeat 50% 50%;
+  background: url('../images/background4.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 .logo {
@@ -55,6 +55,16 @@ nav ul li a {
 }
 nav ul li a:hover{
   text-decoration: none;
+
+}
+nav ul li a:link{
+    text-decoration: none;
+  }
+nav ul li a:active{
+    text-decoration: none;
+}
+nav ul li a:visited{
+    text-decoration: none;
 }
 .menu-icon {
   width: 100%;
@@ -119,6 +129,7 @@ nav ul li a:hover{
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 60px;
+    margin-bottom: 80px;
 }
 .skillrow p{
     font-size: 16px;
@@ -169,7 +180,9 @@ ul {
   
 
 @media(max-width: 1200px) {
-
+    .parallax {
+        background-attachment: scroll;
+    }
     .skill {
         margin-top: 60px;
     }
@@ -191,9 +204,7 @@ ul {
     .skillrow p{
         padding-bottom: 5px;
         padding-top: 1px;
-        font-size: 14px;
-   
-      
+        font-size: 14px;     
     }
     .programming {
         margin-bottom: 80px;
