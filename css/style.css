@@ -4,7 +4,7 @@ html, body {
   width: 100%;
 }
 body {
-  font-family: 'Quicksand';
+    font-family: 'Karla', sans-serif;
 }
 header {
   width: 100%;
@@ -95,7 +95,7 @@ nav ul li a:visited{
     transition: all .5s ease;
     color: #fff;
     border: 3px solid white;
-    font-family:'Quicksand', sans-serif;
+    font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: 800;
@@ -134,7 +134,7 @@ nav ul li a:visited{
     padding: 10px;
     color: #fff;
     margin-top: 60px;
-    font-family: 'Quicksand';
+    font-family: 'Karla', sans-serif;
 }
 .skill h1 {
     margin-top: 80px;
