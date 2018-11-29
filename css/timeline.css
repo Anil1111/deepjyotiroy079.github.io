@@ -31,12 +31,16 @@
   font-size: 34px;
   color: #313534;
 }
+.timeline p{
+  font-size: 20px;
+  font-weight: 500;
+}
 .timeline h2,
 .timeline h3 {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
-  font-weight: 400;
-  font-size: 28px;
+  font-weight: 700;
+  font-size: 30px;
   color:  #313534;
 }
 .timeline .event {
@@ -80,7 +84,7 @@
 }
 @media(max-width: 1200px) {
   .timeline {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     max-width: 100%;
   }
@@ -88,6 +92,12 @@
   .timeline h2,
   .timeline h3 {
     margin: 0;
+  }
+  .timeline h2,
+  .timeline h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 26px;
+    color:  #313534;
   }
   .timeline p{
     text-align: left;
