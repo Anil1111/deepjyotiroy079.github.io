@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/timeline.css">
         <link rel="stylesheet" href="./css/footer.css">
-        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -31,7 +31,7 @@
         
         <div class="wrapper">
             <header>
-                <nav class="navbar-fixed-top">
+                <nav class="navbar-fixed-top" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="menu-icon">
                         <i class="fas fa-bars fa-2x"></i>
                     </div>
@@ -45,16 +45,16 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="myname text-center container-fluid">
+                <div class="myname text-center container-fluid" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h1 class="display-4">DEEPJYOTI ROY</h1>
                 </div>
-                <div class="south">
+                <div class="south" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <a class="btn btn-lg smoothScroll" href="#about">Read More</a>
                 </div>
             </header>
         </div>
         <!--abput-->
-        <div class="about container-fluid text-center" id="about">
+        <div class="about container-fluid text-center" id="about" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <div class="row padding text-center">
                 <div class="profile col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
                     <img src="./images/profile.png" alt="Profile">
@@ -68,9 +68,9 @@
         </div>
         <!--skills-->
         <div class="skill container-fluid" id="Skill">
-            <h1>What I know</h1>
+            <h1 data-aos="fade-right" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out">What I know</h1>
             <div class="row skillrow">
-                <div class="col-md-6 text-left programming">
+                <div class="col-md-6 text-left programming" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>Programming Languages</h3>
                     <ul id="skills">
                         <li>
@@ -107,7 +107,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 text-left web">
+                <div class="col-md-6 text-left web" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>Web Development</h3>
                     <ul id="skills">	
                         <li>
@@ -146,7 +146,7 @@
                 </div>
             </div>
             <div class="row skillrow">
-                <div class="col-md-6 text-left dbms">
+                <div class="col-md-6 text-left dbms" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>Database Management System</h3>
                     <ul id="skills">
                         <li>
@@ -167,7 +167,7 @@
                         </li>   
                     </ul>
                 </div>
-                <div class="col-md-6 text-left version">
+                <div class="col-md-6 text-left version"  data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>Version Control</h3>
                     <ul id="skills">	
                         <li>
@@ -186,49 +186,51 @@
         <!--Experience-->
         <div class="education container" id="education">
             <div class="container-fluid" id="content">
-                <h1>Education</h1>
+                <h1 data-aos="fade-down" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out">Education</h1>
               
-                <ul class="timeline">
-                  <li class="event" data-date="2018">
+                <ul class="timeline" data-aos="fade-ib" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <li class="event" data-date="2018" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>2016-Present</h3>
                     <p>Bachelor's of Engineering (Information Technology)  <br />R.G.P.V. - Bhopal</p>
                   </li>
-                  <li class="event" data-date="2016">
+                  <li class="event" data-date="2016" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h3>2014-2016</h3>
                     <p>High School - Maths & Science <br />Central Board of Secondary Education</p>    
                   </li>
                 </ul>
               </div>     
         </div>
+
+
         <!-- quote -->
         <div class="parallax_section parallax_image">
             <div class="center">
                 <p><strong><i class="fas fa-quote-left"></i>When something is important enough, you do it even if the odds are not in your favor<i class="fas fa-quote-right"></i></strong><br /> - Elon Musk -</p>
             </div>
         </div>
-        <!--Projects -->
-        <div class="project container-fluid text-center" id="project">
-            <div class="container">
-                <h1>Projects</h1>
-                <!--
-                <div class="project1">
-                    <div class="row">
-                        <div class="col-md-4">
-                            some image
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Decentralized Voting System</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui debitis, voluptatibus distinctio itaque natus ex est totam at ratione ullam, in exercitationem praesentium nostrum nulla cum autem enim veritatis? Eius?</p>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <!--QUOTE WITH FIXED BACKGROUND-->
 
-                <!--END OF QUOTE-->
+
+        <!--Projects -->
+        <div class="project container-fluid text-center" id="projects">
+            <div class="container"  data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <h1 data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">Projects</h1>
+                
+                <div class="project1">
+                    <a href="https://github.com/deepjyotiroy079/Election-DApp" target="_blank" style="text-decoration: none; color: #000;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./images/project1.PNG" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Decentralized Voting System</h3>
+                                <p>The blockchain is an emerging, decentralized, and distributed technology that promises to enhance different aspects of many industries. Expanding e-voting into blockchain technology could be the solution to alleviate the present concerns in e-voting.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
                 <div class="project2">
-                    <a href="https://deepjyotiroy079.github.io" style="text-decoration: none; color: #000;">
+                    <a href="https://deepjyotiroy079.github.io" target="_blank" style="text-decoration: none; color: #000;">
                         <div class="row">
                             <div class="col-md-4">
                                 <img src="./images/project2.png" alt="">
@@ -248,22 +250,22 @@
             <div class="container-fluid darkWindow text-center">
                 <ul class="centerLinks">
                     <li style="display:inline-block">
-                        <a href="https://twitter.com/de_coder_079"><img src="./images/icons/twitter.png" alt=""></a>
+                        <a href="https://twitter.com/de_coder_079" target="_blank"><img src="./images/icons/twitter.png" alt=""></a>
                     </li>
                     <li style="display:inline-block">
-                        <a href="https://www.snapchat.com/add/deepjyotiroy079"><img src="./images/icons/snapchat.png" alt=""></a>
+                        <a href="https://www.snapchat.com/add/deepjyotiroy079" target="_blank"><img src="./images/icons/snapchat.png" alt=""></a>
                     </li>
                     <li style="display:inline-block">
-                        <a href="https://www.instagram.com/de_coder_079/"><img src="./images/icons/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/de_coder_079/" target="_blank"><img src="./images/icons/instagram.png" alt=""></a>
                     </li>
                     <li style="display:inline-block">
-                        <a href="https://github.com/deepjyotiroy079"><img src="./images/icons/github.png" alt=""></a>
+                        <a href="https://github.com/deepjyotiroy079" target="_blank"><img src="./images/icons/github.png" alt=""></a>
                     </li>
                     <li style="display:inline-block">
-                        <a href="https://www.linkedin.com/in/deepjyoti-roy-b02b6a160/"><img src="./images/icons/linkedIn.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/deepjyoti-roy-b02b6a160/" target="_blank"><img src="./images/icons/linkedIn.png" alt=""></a>
                     </li>
                     <li style="display:inline-block">
-                        <a href="mailto:deepjyotiroy079@gmail.com"><img src="./images/icons/email.png" alt=""></a>
+                        <a href="mailto:deepjyotiroy079@gmail.com" target="_blank"><img src="./images/icons/email.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -283,5 +285,9 @@
         <script src="./js/simple-skillbar.js"></script>
         <script type="text/javascript" src="./js/js.js"></script>
         <script src="./js/timeline.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
