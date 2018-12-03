@@ -11,7 +11,6 @@ $(window).on("scroll", function() {
         $('nav').removeClass('white');
     }
 });
-
 (function($) {
 	"use strict";
 
