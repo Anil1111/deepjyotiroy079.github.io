@@ -1,9 +1,4 @@
 $(document).ready(function(){
-	$(window).load(function(){
-		$('#preloader').fadeOut('slow',function(){$(this).remove();});
-	});
-});
-$(document).ready(function(){
     $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
     });
